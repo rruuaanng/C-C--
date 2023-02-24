@@ -1,12 +1,15 @@
 #ifndef __algorithm_filter_h
 #define __algorithm_filter_h
 
-int Filter(const char*,int*);
-/*
-    char *data="(&3!a%6^c123456*).ddf7";
-    int *result; // 结果指针
-    Filter(data,result);
-    printf("%d ",*result);
-*/
+#define O '|' // 标志位
+
+int Filter(char*,char,char,char*);
+void CharToBin(char);
+static char Clear(char);
+
+
+char *bin; //用于存储每个字符的二进制串
+char *MO4; // 第一个字符串
+char *MO5; // 第二个字符串
 
 #endif //__algorithm_fitler_h
