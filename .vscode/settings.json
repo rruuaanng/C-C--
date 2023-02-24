@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "base64.h": "c",
+        "new": "cpp",
+        "cstdarg": "cpp",
+        "cstdio": "cpp",
+        "stdint.h": "c",
+        "stdint-gcc.h": "c",
+        "stdbool.h": "c",
+        "errno.h": "c",
+        "alg.h": "c",
+        "rpcndr.h": "c",
+        "winnt.h": "c",
+        "filter_data.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "filter.h": "c",
+        "stdio.h": "c",
+        "malloc.h": "c"
+    }
+}
