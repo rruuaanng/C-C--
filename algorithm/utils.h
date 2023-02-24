@@ -5,7 +5,6 @@
 
 #define O '|' // 过滤处理占位符
 
-
 class _Utils{
  public:
   int Filter(char*,char,char,char*);
