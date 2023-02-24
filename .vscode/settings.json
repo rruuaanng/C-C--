@@ -17,6 +17,8 @@
         "string_view": "c",
         "filter.h": "c",
         "stdio.h": "c",
-        "malloc.h": "c"
+        "malloc.h": "c",
+        "functional": "c",
+        "stdlib.h": "c"
     }
 }

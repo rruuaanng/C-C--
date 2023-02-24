@@ -24,12 +24,7 @@ void Split(char *str){
     }
 }
 
-int BinToDec(char *bin){ // 01010
-    int num[]={128,64,32,16,8,4,2,1},i=0,sum=0,len=0,idx=0;
-    for(char *b=bin;*b!=0;b+=1,len++){ }
-    for(char *b=bin,i=8-len;i<8;i++,idx++){ sum += (*(b+idx)-48)*num[i]; }
-    return sum;
-}
+
 
 void CharToBin(char n){
     int len = 0;
