@@ -16,8 +16,8 @@ class _Utils{
         Filter(data,'<','>',MO5);
         printf("%s \n",MO5);
     */
-  void CharToBin(char); 
-  int BinToDec(char*);
+  int Filter(char*,char*);
+  int Filter(char*,int*);
   char Clear(char); 
 };
 
