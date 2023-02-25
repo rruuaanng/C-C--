@@ -5,7 +5,6 @@ int result[6];
 int main(int argc, char const *argv[]){
 	char data[] = "A1B2"; // 明文数据
 	char *message=Encode(data);
-	// printf("encode: %s \n",message);
 	Recode(message,result);
 	Check(result);
 }
