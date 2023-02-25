@@ -1,15 +1,6 @@
 #include "base64.h"
 
-int result[6];
-
-int main(int argc, char const *argv[]){
-	char data[] = "A1B2"; // 明文数据
-	char *message=Encode(data);
-	Recode(message,result);
-	Check(result);
-}
-
-char *Encode(char data[]){
+char *_Base64::Encode(char data[]){
 	/**
 	 * @brief 编码函数
 	 * @param 1 未编码数据
@@ -49,20 +40,9 @@ char *Encode(char data[]){
 	return message;
 }
 
-static int Swap(const void *e1,const void *e2)
-{
-	/**
-	 * @brief std快速排序模板
-	 * @param 1 元素1
-	 * @param 2 元素2
-	 * @return 排序标识
-	*/
-	if (*(int*)e1 > *(int*)e2) { return -1; }
-	else if (*(int*)e1 == *(int*)e2) { return 0; }
-	else { return 1; }
-}
 
-void Recode(char *message,int *result){
+
+void _Base64::Recode(char *message,int *result){
 	/**
 	 * @brief 重编码函数
 	 * @param 1 加密后未排序数据
@@ -77,7 +57,20 @@ void Recode(char *message,int *result){
 	for(int i=0;i<6;i++) { result[i]=num[i]; }
 	return;
 }
-void Check(int *message){
+
+static int Swap(const void *e1,const void *e2){
+	/**
+	 * @brief std快速排序模板
+	 * @param 1 元素1
+	 * @param 2 元素2
+	 * @return 排序标识
+	*/
+	if (*(int*)e1 > *(int*)e2) { return -1; }
+	else if (*(int*)e1 == *(int*)e2) { return 0; }
+	else { return 1; }
+}
+
+void _Base64::Check(int *message){
 	for(int *m=message;*m!=0;m+=1){ printf("%d ",*m); }
 }
 

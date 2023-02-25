@@ -23,14 +23,25 @@ int decode_table[] = {0, 1, 2, 3, 4, 5, 6, 7,
                       40,41,42,43,44,45,46,47,
                       48,49,50,51,52,53,54,55,
                       56,57,58,59,60,61,62,63};
+static int Swap(const void*,const void*); // 交换函数模板
 
-// int *GetResult(char *);               // 返回排序后加密数据的前六位
+int result[6];
 
+class _Base64{
+  /**
+   * @example
+   * char data[] = "A1B2"; // 明文数据
+   * char *message=base64.Encode(data);
+   * base64.Recode(message,result);
+   * base64.Check(result);
+  */
+ public:
+  char *Encode(char[]); // 编码函数
+  void Recode(char*,int*); // 重编码函数
+  void Check(int*); // 检查函数
+}base64;
 
-char *Encode(char[]); // 编码函数
-void Recode(char*,int*);
-void Check(int*);
-static int Swap(const void*,const void*); //交换函数模板
+// _Base64 ;
 
 #endif // algorithm_base64_h
 
