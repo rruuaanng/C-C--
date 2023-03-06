@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "kansas.h": "c"
+        "kansas.h": "c",
+        "malloc.h": "c",
+        "mapreduce.h": "c"
     }
 }
